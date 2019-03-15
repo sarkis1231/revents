@@ -1,0 +1,13 @@
+{
+  "printWidth": 80,
+  "parser": "babel",
+  "tabWidth": 2,
+  "singleQuote": true,
+  "semi": true,
+  "trailingComma": "es5",
+  "bracketSpacing": false,
+  "jsxBracketSameLine": false,
+  "arrowParents": "avoid",
+  "requirePragma": false,
+  "proseWrap": "preserve"
+}

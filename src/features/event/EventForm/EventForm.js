@@ -18,7 +18,6 @@ class EventForm extends Component {
   onInputChange = e => {
     const newEvent = this.state.event;
     newEvent[e.target.name] = e.target.value;
-    console.log(e.target.name);
     this.setState({
       event: newEvent,
     });

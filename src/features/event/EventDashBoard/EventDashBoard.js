@@ -77,6 +77,7 @@ class EventDashBoard extends Component {
   handleCreateEvent = newEvent => {
     newEvent.id = cuid();
     newEvent.hostPhotoURL = '/assets/user.png';
+    console.log(newEvent);
     const updatedEvents = [...this.state.events, newEvent];
     this.setState({
       events: updatedEvents,

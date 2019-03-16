@@ -3,7 +3,8 @@ import {Segment, Item, List, Button, Icon} from 'semantic-ui-react';
 import EventListAttendee from './EventListAttendee';
 class EventListItem extends Component {
   render() {
-    const {event, onEventOpen} = this.props;
+    const {event, onEventOpen, deleteEvent} = this.props;
+    console.log(event.id);
 
     return (
       <Segment.Group>
@@ -14,7 +15,7 @@ class EventListItem extends Component {
               <Item.Content>
                 <Item.Header as="a">{event.title}</Item.Header>
                 <Item.Description>
-                  Hosted by <a href="#">{event.hostedBy}</a>
+                  Hosted by <a href="sako">{event.hostedBy}</a>
                 </Item.Description>
               </Item.Content>
             </Item>
@@ -36,6 +37,13 @@ class EventListItem extends Component {
         </Segment>
         <Segment clearing>
           <span>{event.description}</span>
+          <Button
+            onClick={deleteEvent(event.id)}
+            as="a"
+            color="red"
+            floated="right"
+            content="Delete"
+          />
           <Button
             onClick={onEventOpen(event)}
             as="a"

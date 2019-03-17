@@ -6,6 +6,7 @@
     "cuid": "^2.1.6",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
+    "react-router-dom": "^4.4.0",
     "react-scripts": "2.1.8",
     "semantic-ui-react": "^0.86.0"
   },

@@ -1,7 +1,13 @@
 import React, {Component} from 'react';
 import {Segment, Form, Button} from 'semantic-ui-react';
 
-const emptyEvent = {title: '', date: '', city: '', venue: '', hostedBy: ''};
+const emptyEvent = {
+  title: '',
+  date: '',
+  city: '',
+  venue: '',
+  hostedBy: '',
+};
 
 class EventForm extends Component {
   state = {
@@ -67,6 +73,7 @@ class EventForm extends Component {
               placeholder="Event Date"
             />
           </Form.Field>
+
           <Form.Field>
             <label>City</label>
             <input

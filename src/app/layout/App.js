@@ -9,6 +9,7 @@ import UserDetailedPage from '../../features/user/UserDetialed/USerDetailedPage'
 import PeopleDasheBoard from '../../features/user/PeopleDashbaord/PeopleDashBoard';
 import EventDetailedPage from '../../features/event/EventDetailed/EventDetailedPage';
 import HomePage from '../../features/home/HomePage';
+import TestComponent from '../../features/testarea/TestComponent';
 class App extends Component {
   render() {
     return (
@@ -25,6 +26,7 @@ class App extends Component {
               <Container className="main">
                 <Switch>
                   <Route path="/events" component={EventDashBoard} />
+                  <Route path="/test" component={TestComponent} />
                   <Route path="/event/:id" component={EventDetailedPage} />
                   <Route path="/people" component={PeopleDasheBoard} />
                   <Route path="/profile/:id" component={UserDetailedPage} />

@@ -27,6 +27,7 @@ const category = [
 
 class EventForm extends Component {
   onFormSubmit = formValues => {
+    console.log(formValues);
     if (this.props.initialValues.id) {
       this.props.updateEvent(formValues);
       this.props.history.goBack();
@@ -75,7 +76,8 @@ class EventForm extends Component {
               <Field
                 name="city"
                 type="text"
-                component={TextInput}
+                component={TextArea}
+                options={{types: ['(cities']}}
                 placeholder="Event City"
               />
               <Field
